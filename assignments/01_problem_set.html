@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2023-09-07">
 
-<title>Gov 2002 - Quantitative Social Science Methods I</title>
+<title>Gov 2002 - Gov 2002: Problem Set 1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +24,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./files/img/gov2002-shield.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../files/img/gov2002-shield.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,17 +70,46 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar docked nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Gov 2002</span>
     </a>
   </div>
@@ -90,19 +120,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./syllabus.html"> 
+    <a class="nav-link" href="../syllabus.html"> 
 <span class="menu-text">Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./schedule.html"> 
+    <a class="nav-link" href="../schedule.html"> 
 <span class="menu-text">Schedule</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./materials/index.html"> 
+    <a class="nav-link" href="../materials/index.html"> 
 <span class="menu-text">Materials</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./assignments/index.html"> 
+    <a class="nav-link active" href="../assignments/index.html" aria-current="page"> 
 <span class="menu-text">Assignments</span></a>
   </li>  
   <li class="nav-item">
@@ -119,96 +149,213 @@ ul.task-list li input[type="checkbox"] {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../assignments/01_problem_set.html">Assignments</a></li><li class="breadcrumb-item"><a href="../assignments/01_problem_set.html">Problem Set 1</a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-<!-- margin-sidebar -->
-    
-<!-- main -->
-<main class="content column-page" id="quarto-document-content">
-
-<div class="grid title-block">
-    <div class="g-col-12 g-col-sm-8 order-2 order-sm-1">
-        <h1 class="course-title">
-            Quantitative Social Science Methods I
-        </h1>
-        <div class="course-subtitle">
-            <p>Probability, Inference, and Regression</p>
-        </div>
-        <div class="course-meta">
-            <p></p><p>Gov 2002 • Fall 2023<br>Harvard University</p><p></p>
-        </div>
-    </div>
-    <div class="g-col-12 g-col-sm-4 order-1 order-sm-2">
-      <div class="grid" style="--bs-columns: 5;">
-        <div class="g-col-1 g-col-sm-0"></div>
-        <div class="g-col-3 g-col-sm-5"><img src="./files/img/gov2002-icon-512.png" class="img-fluid"></div>
-        <div class="g-col-1 g-col-sm-0"></div>
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Resources</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
       </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../assignments/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Assignments overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../assignments/problem-sets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Problem set instructions</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Assignments</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../assignments/01_problem_set.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Problem Set 1</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../assignments/02_problem_set.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Problem Set 2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../assignments/03_problem_set.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Problem Set 3</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../assignments/04_problem_set.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Problem Set 4</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../assignments/05_problem_set.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Problem Set 5</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../assignments/06_problem_set.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Problem Set 6</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../assignments/07_problem_set.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Problem Set 7</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../assignments/08_problem_set.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Problem Set 8</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../assignments/09_problem_set.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Problem Set 9</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../assignments/10_problem_set.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Problem Set 10</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
     </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#problem-set-instructions" id="toc-problem-set-instructions" class="nav-link active" data-scroll-target="#problem-set-instructions">Problem Set Instructions</a></li>
+  <li><a href="#question-1-5-points" id="toc-question-1-5-points" class="nav-link" data-scroll-target="#question-1-5-points">Question 1 (5 points)</a></li>
+  <li><a href="#question-2-9-points" id="toc-question-2-9-points" class="nav-link" data-scroll-target="#question-2-9-points">Question 2 (9 points)</a></li>
+  <li><a href="#question-3-11-points" id="toc-question-3-11-points" class="nav-link" data-scroll-target="#question-3-11-points">Question 3 (11 points)</a></li>
+  <li><a href="#question-4-15-points" id="toc-question-4-15-points" class="nav-link" data-scroll-target="#question-4-15-points">Question 4 (15 points)</a></li>
+  <li><a href="#question-5-30-points" id="toc-question-5-30-points" class="nav-link" data-scroll-target="#question-5-30-points">Question 5 (30 points)</a></li>
+  <li><a href="#question-6-30-points" id="toc-question-6-30-points" class="nav-link" data-scroll-target="#question-6-30-points">Question 6 (30 points)</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../assignments/01_problem_set.html">Assignments</a></li><li class="breadcrumb-item"><a href="../assignments/01_problem_set.html">Problem Set 1</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Gov 2002: Problem Set 1</h1>
 </div>
 
 
-<div class="grid course-details">
-<section id="teaching-team" class="level3 g-col-12 g-col-sm-12 g-col-md-8">
-<h3 class="anchored" data-anchor-id="teaching-team">Teaching Team</h3>
-<section id="head-instructor" class="level4">
-<h4 class="anchored" data-anchor-id="head-instructor">Head Instructor</h4>
-<div class="grid">
-<div class="g-col-3">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src=".png" class="img-fluid figure-img"></p>
-<figcaption>Link</figcaption>
-</figure>
-</div>
-</div>
-<div class="g-col-9">
-<ul>
-<li><i class="fa-solid fa-user" aria-label="user"></i> &nbsp; <a href="https://mattblackwell.org">Prof.&nbsp;Matt Blackwell</a></li>
-<li><i class="fa-solid fa-university" aria-label="university"></i> &nbsp; CGIS Knafel 305</li>
-<li><i class="fa-solid fa-envelope" aria-label="envelope"></i> &nbsp; &lt;a href=“mailto:mblackwell@gov.harvard.edu”&gt;mblackwell@gov.harvard.edu</li>
-<li><i class="fa-brands fa-twitter" aria-label="twitter"></i> &nbsp; <a href="https://www.twitter.com/matt_blackwell">matt_blackwell</a></li>
-<li><i class="fa-solid fa-calendar-check" aria-label="calendar-check"></i> &nbsp; <a href="https://calendly.com/matt_blackwell/">Schedule an appointment</a></li>
-</ul>
-</div>
-</div>
-</section>
-<section id="teaching-fellow" class="level4">
-<h4 class="anchored" data-anchor-id="teaching-fellow">Teaching Fellow</h4>
-<div class="grid">
-<div class="g-col-3">
-<p><img src="files/img/mitsuru.jpg" class="img-fluid"></p>
-</div>
-<div class="g-col-9">
-<ul>
-<li><i class="fa-solid fa-user" aria-label="user"></i> &nbsp; <a href="https://www.mitsurumukaigawara.com">Mitsuru Mukaigawara</a></li>
-<li><i class="fa-solid fa-envelope" aria-label="envelope"></i> &nbsp; <a href="mailto:mailto:mitsuru_mukaigawara@g.harvard.edu">mitsuru_mukaigawara@g.harvard.edu</a></li>
-</ul>
-</div>
-</div>
-</section>
-</section>
-<div class="g-col-12 g-col-md-4 contact-policy">
-<section id="course-details" class="level3">
-<h3 class="anchored" data-anchor-id="course-details">Course details</h3>
-<ul>
-<li><i class="fa-solid fa-calendar" aria-label="calendar"></i> &nbsp; Tue/Thu</li>
-<li><i class="fa-solid fa-calendar-alt" aria-label="calendar-alt"></i> &nbsp; September 5th-December 5th, 2023</li>
-<li><i class="fa-solid fa-clock" aria-label="clock"></i> &nbsp; 1:30–2:45 PM</li>
-<li><i class="fa-solid fa-location-dot" aria-label="location-dot"></i> &nbsp; Science Center 110</li>
-<li><i class="fa-brands fa-slack" aria-label="slack"></i> &nbsp; <a href="https://gov-2002-f23-93a.slack.com/ssb/redirect">Slack</a></li>
-</ul>
-</section>
-<section id="contacting-us" class="level3">
-<h3 class="anchored" data-anchor-id="contacting-us">Contacting us</h3>
-<p>General questions about the course should be posted to either the course Ed Discussion board or the course Slack. Someone on the teaching staff will attempt to respond to these messages within 25 hours, but also remember that life can be busy and chaotic for everyone (including me!), so if I don’t respond right away, don’t worry! For other issues (absences, etc), feel free to email me or send me a direct message on Slack.</p>
-</section>
-</div>
-</div>
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 7, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
 
 
+</header>
+
+
+<p><a href="../assignments/problem-sets.html">Submission instructions</a> | <a href="../files/assignments/pset_1.pdf">PDF <i class="fa-regular fa-file-pdf" aria-label="file-pdf"></i></a> | <a href="../files/assignments/pset_1.Rmd">Rmd <i class="fa-regular fa-file-code" aria-label="file-code"></i></a> |</p>
+<section id="problem-set-instructions" class="level2">
+<h2 class="anchored" data-anchor-id="problem-set-instructions">Problem Set Instructions</h2>
+<p>This problem set is due on <strong>September 13, 11:59 pm</strong> Eastern time. Please upload a PDF of your solutions to Gradescope. We will accept hand-written solutions but we strongly advise you to typeset your answers in Rmarkdown. Please list the names of other students you worked with on this problem set.</p>
+</section>
+<section id="question-1-5-points" class="level2">
+<h2 class="anchored" data-anchor-id="question-1-5-points">Question 1 (5 points)</h2>
+<p>Post an introductory message on Ed in the <a href="https://edstem.org/us/courses/45093/discussion/3396008">introductions thread</a>.</p>
+</section>
+<section id="question-2-9-points" class="level2">
+<h2 class="anchored" data-anchor-id="question-2-9-points">Question 2 (9 points)</h2>
+<p>Suppose that <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are mutually exclusive events and that <span class="math inline">\(P(A) = 0.2\)</span> and <span class="math inline">\(P(B) = 0.6\)</span>. What is the probability that</p>
+<ol type="a">
+<li>either <span class="math inline">\(A\)</span> or <span class="math inline">\(B\)</span> occurs;</li>
+<li><span class="math inline">\(A\)</span> occurs but <span class="math inline">\(B\)</span> does not;</li>
+<li>both <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> occur?</li>
+</ol>
+</section>
+<section id="question-3-11-points" class="level2">
+<h2 class="anchored" data-anchor-id="question-3-11-points">Question 3 (11 points)</h2>
+<p>Let <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> be events. The <em>symmetric difference</em> <span class="math inline">\(A \Delta B\)</span> be the set of all elements that are in A or B, but not both. This is sometimes referred to as the <em>exclusive or</em> (XOR). Using the axioms of probability, show that <span class="math display">\[
+P(A \Delta B) = P(A) + P(B) - 2P(A \cap B)
+\]</span></p>
+</section>
+<section id="question-4-15-points" class="level2">
+<h2 class="anchored" data-anchor-id="question-4-15-points">Question 4 (15 points)</h2>
+<p>You and your coauthor are trying to model the probability over how long the peace between the United States and United Kingdom will last, where the sample space is the set of all positive years (<span class="math inline">\(\Omega = \{1, 2, 3, \ldots\}\)</span>). You and your coauthor agree that this sample space is countably infinite, but your coauthor insists that you should just model every year as equally likely. Using the axioms of probability, show your coauthor that each year in the sample space cannot be equally likely.</p>
+</section>
+<section id="question-5-30-points" class="level2">
+<h2 class="anchored" data-anchor-id="question-5-30-points">Question 5 (30 points)</h2>
+<p>Suppose you are conducting a panel study over two waves, three months apart. In the first wave, you sample without replacement <span class="math inline">\(n\)</span> respondents from your pool of <span class="math inline">\(N\)</span> potential panelists. In the second wave, you take a sample of size <span class="math inline">\(m\)</span> without replacement from the same pool. Our goal will be to obtain the probability that exactly <span class="math inline">\(k\)</span> of the <span class="math inline">\(m\)</span> respondents in the second wave were also in the first wave. We’ll do this in a few steps.</p>
+<p>You should assume that being a respondent in one wave has no effect on being selected in another wave and that (for now) all those selected participate.</p>
+<ol type="a">
+<li><p>What are the total number of ways to select <span class="math inline">\(m\)</span> respondents from the pool in the second wave?</p></li>
+<li><p>How many different ways are there to select <span class="math inline">\(m\)</span> respondents in the second wave such that exactly <span class="math inline">\(k\)</span> are from the <span class="math inline">\(n\)</span> selected in the first wave? (HINT: split the choices into two-subchoices: selecting <span class="math inline">\(k\)</span> from the <span class="math inline">\(n\)</span> in the first wave and selecting <span class="math inline">\(m - k\)</span> from the remaining <span class="math inline">\(N - n\)</span> pool members.)</p></li>
+<li><p>Assuming everyone is equally likely to be selected, what is the probability that exactly <span class="math inline">\(k\)</span> of the <span class="math inline">\(m\)</span> respondents in the second wave were also selected in the first wave?</p></li>
+</ol>
+</section>
+<section id="question-6-30-points" class="level2">
+<h2 class="anchored" data-anchor-id="question-6-30-points">Question 6 (30 points)</h2>
+<p>We’ll now continue with the panel survey example, but now suppose that respondents do not always respond when selected for the sample. If selected in the first wave, panelists will respond 75% of the time. If a panelist is selected and does respond in the first wave, it sours their experience and they only respond with probability 0.25 if they are selected in the second wave. If they didn’t respond in the first wave (either because they weren’t selected or because they were selected and didn’t respond), their probability of responding in the second wave if selected remains at 0.75.</p>
+<ol type="a">
+<li><p>What’s the probability that a single potential panelist is randomly selected in the first wave <strong>and</strong> actually responds? Remember that in the first wave we are selecting <span class="math inline">\(n\)</span> panelists from the pool of <span class="math inline">\(N\)</span> with equal probability.</p></li>
+<li><p>What is the probability of panelist responding if they are selected in the second wave? Remember that in the second wave we are selecting <span class="math inline">\(m\)</span> panelists from the pool of <span class="math inline">\(N\)</span> with equal probability and this is unaffected by the sampling or (non)responses in the first wave. (HINT: use the law of total probability and look for useful partitions!)</p></li>
+</ol>
+
+
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
